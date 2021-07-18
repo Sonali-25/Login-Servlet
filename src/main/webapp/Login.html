@@ -7,7 +7,7 @@
 <body>
 <form action="LoginServlet" method="post">
     UserName:<input  type="text" name="user" pattern="^[A-Z]{1}[A-Z a-z]{2,}$"><br>
-    Password:<input type="password" name="pwd"><br>
+    Password:<input type="password" name="pwd" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"><br>
     <input type="submit" value="Login">
 </form>
 </body>
